@@ -1,0 +1,16 @@
+There are 2 arrays, look if there is any common item.
+
+Simple solution: nested loop, but take O(n^2) --> not the best solution
+  public static boolean itemInCommon( int[] array1; int[] array2){
+  for (int i: array1){
+        for (int j: array2) {
+               if (i == j) return true;
+               }
+        }
+
+  return false;
+  }
+
+
+Best solution:
+    see on the class

@@ -14,3 +14,8 @@ Adding to the next null index
 
 ####Method 2: 
 Form a linkedlist for every index
+
+##BigO
+hash method is O(1);
+set and get method O(n) if all of key fall in one index
+but in general, it is O(1)
