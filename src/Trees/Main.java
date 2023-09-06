@@ -1,5 +1,4 @@
 package Trees;
-
 public class Main {
     public static void main (String args[]){
 
@@ -15,6 +14,11 @@ public class Main {
         System.out.println(myBST.root.left.right.value);
         System.out.println(myBST.contains(82));
         System.out.println(myBST.contains(1));
+        System.out.println(myBST.BFS());
+        System.out.println("DFS PreOrder: "+myBST.DFSPreOrder());
+
+        System.out.println("DFS PostOrder: "+myBST.DFSPostOrder());
+        System.out.println("DFS InOrder: "+myBST.DFSInorder());
 
     }
 }

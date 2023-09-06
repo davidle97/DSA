@@ -1,6 +1,8 @@
 package HashTable;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class itemInCommon {
 
@@ -16,7 +18,18 @@ public class itemInCommon {
         return false;
 
     }
-
+    public static boolean CommonItems(int arr1[], int[] array2){
+        Set<Integer> common= new HashSet<>();
+        for (int i: arr1){
+            common.add(i);
+        }
+        for (int j: array2){
+            if (common.contains(j)){
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main (String args[]){
         int[] array1={1,2,3};
         int[] array2 = {2,4,5};
